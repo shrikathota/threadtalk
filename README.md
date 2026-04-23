@@ -76,3 +76,5 @@ Notes:
 
 - Built by Shrika Thota
 - Inspired by Spider-Verse visual style
+
+Check out the [deployed](https://threadtalk-text-to-speech.netlify.app/) version 
