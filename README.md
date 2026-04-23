@@ -7,9 +7,6 @@ It lets users type text, choose a voice, adjust speed and pitch, and play speech
 
 - Project type: Frontend web app (HTML, CSS, JavaScript)
 - Core API: Web Speech API (SpeechSynthesis)
-- Versions included:
-  - starter: base project files
-  - completed: final styled and feature-rich version
 
 ## Features
 
