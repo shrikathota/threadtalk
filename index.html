@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThreadTalk - Text To Speech App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <h1>ThreadTalk</h1>
+      <p class="banner-caption">Your friendly neighborhood audio buddy</p>
+    </header>
+
+    <main class="container">
+      <div class="layout">
+        <section class="left-panel">
+          <div class="card instructions compact">
+            <h3>How to use:</h3>
+            <ol>
+              <li>Type or paste your text</li>
+              <li>Select a voice</li>
+              <li>Set speed and pitch</li>
+              <li>Click Speak</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <label for="text-input">
+              <strong>Your Text</strong>
+            </label>
+            <span class="char-counter">
+              <span id="char-count">0</span> characters
+            </span>
+            <textarea
+              id="text-input"
+              placeholder="Enter text to convert to speech..."
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="card">
+            <label for="voice-select">
+              <strong>Voice</strong>
+            </label>
+            <select id="voice-select">
+              <option value="">Loading voices...</option>
+            </select>
+          </div>
+
+          <div class="card controls-grid">
+            <div class="control-group">
+              <label for="speed-slider">
+                Speed: <span id="speed-value">1</span>x
+              </label>
+              <input
+                type="range"
+                id="speed-slider"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+              />
+            </div>
+
+            <div class="control-group">
+              <label for="pitch-slider">
+                Pitch: <span id="pitch-value">1</span>
+              </label>
+              <input
+                type="range"
+                id="pitch-slider"
+                min="0"
+                max="2"
+                step="0.1"
+                value="1"
+              />
+            </div>
+          </div>
+
+          <div id="status" class="status">
+            <span class="status-dot"></span>
+            <span id="status-text">Status: Ready</span>
+          </div>
+        </section>
+
+        <aside class="right-panel">
+          <div class="spider-showcase">
+            <img
+              id="spider-hero"
+              src="spider.png"
+              alt="Spider-Man swinging with web"
+            />
+            <p class="spider-caption">Weaving your words into sound.</p>
+          </div>
+
+          <div class="button-group right-actions">
+            <button id="speak-btn" class="btn-primary">Speak</button>
+            <button id="stop-btn" class="btn-secondary">Stop</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Built by Shrika Thota | Powered by the Web Speech API | Inspired by the SpiderVerse
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
