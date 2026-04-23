@@ -29,7 +29,6 @@ It lets users type text, choose a voice, adjust speed and pitch, and play speech
 ## Project Structure
 
 ```text
-
 app.js
 index.html
 spider.png
